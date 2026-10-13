@@ -1,0 +1,19 @@
+name: design_tokens
+description: "이유미 · 커플래닛 공용 디자인 토큰 — 두 앱이 같이 쓰는 간격·반경 값의 유일한 출처."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+# Flutter 의존은 EdgeInsets 때문이다 — 공용 시맨틱 중 5개(sectionPadding·
+# itemPadding·innerBoxPadding·sheetBodyPadding·toastPadding)가 패딩 모양까지
+# 같아서, 숫자만 공용으로 두면 모양이 두 앱에서 따로 갈릴 수 있다.
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
